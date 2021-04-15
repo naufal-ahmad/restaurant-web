@@ -1,0 +1,953 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+}
+
+/* Header */
+header {
+    background-image: url(../img/bg1.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    /* padding: 15px 5%; */
+}
+
+nav,
+.content {
+    position: relative;
+    z-index: 999;
+}
+
+nav>strong {
+    margin-left: 35px;
+    display: inline;
+}
+
+nav>strong>a {
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+nav>strong>a:hover {
+    color: #ffffffe7;
+}
+
+nav>.nav-btn {
+    display: none;
+    /* border: 0;
+    width: 56px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: 0.5s ease all; */
+}
+
+nav>.btn-responsive:focus {
+    /* outline: none !important;
+    border: 1px solid rgb(128, 189, 255);
+    box-shadow: rgb(128, 189, 255) 0px 0px 0px 1px; */
+}
+
+nav>.btn-responsive i {
+    /* color: gray;
+    font-size: 29px;
+    cursor: pointer; */
+}
+
+nav>.navsatu {
+    display: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+nav>.navsatu>a {
+    display: inline-block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav>.navsatu>a:hover {
+    color: #ffffffe7;
+    text-decoration: underline;
+}
+
+nav>#nav-check {
+    display: none;
+}
+
+/* .nav2 {
+    align-items: center;
+    justify-content: center;
+    display: none !important;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.nav2 .kedua {
+    display: flex !important;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav2 a {
+    padding: .5rem .1rem;
+    color: #f8f9fa;
+    text-decoration: none;
+} */
+
+.content {
+    margin-top: 5%;
+    padding: 20px 3.9%;
+    width: 60%;
+}
+
+.content h1 {
+    margin-bottom: 4px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.content span {
+    color: #ffffffc2;
+}
+
+/* Section Pertama */
+.sec-1 {
+    min-height: 100vh;
+    color: black;
+    margin: 50px 1rem 0 1rem;
+    display: block;
+}
+
+.container0 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row0 {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.image {
+    margin-left: 10px;
+    position: relative;
+    width: 75%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.image img {
+    margin: 1rem 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 4px;
+}
+
+.fleximage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-satu {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto 0;
+}
+
+.col-satu h1 {
+    margin-bottom: 10px;
+    font-size: 1.9em;
+}
+
+/* Button */
+.col-satu button {
+    position: relative;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.5s ease all;
+    overflow: hidden;
+    z-index: 9999;
+    outline: none;
+    color: #fff;
+    background-color: #4E73DF;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    margin-top: 16px;
+}
+
+.col-satu button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3158C9;
+    color: #fff;
+    z-index: -1;
+    transition: 0.5s ease all;
+    outline: none;
+}
+
+.col-satu button:hover::before {
+    left: 0;
+}
+
+
+/* .col-satu button (Buatan Sendiri) 
+    background-color: #4E73DF;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    margin-top: 16px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+*/
+
+.col-satu hr {
+    border: 0;
+    border-top: 1px solid #E5E5E5;
+    margin: 16px 0 16px 0;
+    width: 94%;
+}
+
+/* Section Kedua */
+.sec-2 {
+    min-height: 100vh;
+    color: black;
+    margin: 25px 0 58px 0;
+    display: block;
+}
+
+/* Container dan row */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    min-width: 100%;
+}
+
+/* Chef info */
+.chef-info {
+    padding: 0 15px;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.image-2 {
+    max-width: 100%;
+}
+
+.image-2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.fleximage-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-dua {
+    position: relative;
+    width: 100%;
+    margin: auto 0;
+}
+
+.col-dua h3 {
+    font-size: 1.7em;
+}
+
+.col-dua small {
+    display: block;
+}
+
+.col-dua span {
+    display: block;
+    margin-top: -15px;
+    color: #7c7979;
+}
+
+.col-dua hr {
+    border: 0;
+    border-top: 1px solid #E5E5E5;
+    margin: 10px 0;
+}
+
+/* Chef food */
+.chef-food {
+    width: 60%;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.image-3 {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.image-3 img {
+    max-width: 30%;
+    float: left;
+}
+
+.fleximage-3 {
+    position: relative;
+}
+
+.col-tiga {
+    clear: left;
+    max-width: 100%;
+    margin-right: 50px;
+}
+
+.col-tiga h3 {
+    font-size: 1.7em;
+    margin-bottom: 3px;
+}
+
+.col-tiga span {
+    color: #7c7979;
+}
+
+.col-tiga hr {
+    border: 0;
+    border-top: 1px solid #E5E5E5;
+    margin: 15px 0;
+}
+
+/* Section 3 */
+.sec-3 {
+    color: black;
+    min-height: 100vh;
+    background-color: #F8F9FA;
+}
+
+.row {
+    display: flex;
+}
+
+/* Content */
+.content-2 {
+    margin: 16px 27px 0 40px;
+    text-align: right;
+    padding: 0 15px 0 15px;
+    width: 40%;
+}
+
+.content-2 h3 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+
+.content-2 span {
+    display: block;
+}
+
+/* Form */
+.form {
+    margin-top: 7px;
+    margin-left: 30px;
+    padding: 9px 15px 0 15px;
+    width: 50%;
+}
+
+.form ul {
+    list-style: none;
+}
+
+.form ul li:first-child,
+.form ul li:nth-child(2) {
+    margin-bottom: 1em;
+}
+
+.form input {
+    width: 100%;
+    height: 48px;
+}
+
+.form input,
+.form textarea {
+    border: 1px solid #CED4DA;
+    padding: 20px;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: 0.15s ease-in-out;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none !important;
+    border: 1px solid #80BDFF;
+    box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 3.2px;
+}
+
+.form textarea {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/* Button */
+.form button {
+    position: relative;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.5s ease all;
+    overflow: hidden;
+    z-index: 1;
+    outline: none;
+    color: #fff;
+    background-color: #4E73DF;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    float: right;
+    margin-bottom: 1em;
+}
+
+.form button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3158C9;
+    color: #fff;
+    z-index: -1;
+    transition: 0.5s ease all;
+    outline: none;
+    clear: right;
+}
+
+.form button:hover::before {
+    left: 0;
+}
+
+/* Footer */
+footer {
+    min-height: 90vh;
+}
+
+.container-2 {
+    width: 95%;
+    color: black;
+    margin: 70px auto;
+    padding: 0 15px;
+}
+
+.row-2 {
+    display: flex;
+    margin: 0 -15px 48px -15px;
+}
+
+.row-2 ul {
+    list-style: none;
+}
+
+.row-2 h3 {
+    font-size: 1.5em;
+}
+
+.col-restaurant,
+.col-services,
+.col-company {
+    padding: 0 15px 0 15px;
+    margin-bottom: 48px;
+}
+
+.col-restaurant {
+    width: 34%;
+}
+
+.col-services {
+    width: 32%;
+    text-align: center;
+}
+
+.col-company {
+    width: 32%;
+    text-align: right;
+}
+
+.col-restaurant span,
+.col-services li a,
+.col-company li a {
+    color: rgba(0, 0, 0, .5);
+}
+
+.col-services li a,
+.col-company li a {
+    text-decoration: none;
+}
+
+.col-services li a:hover,
+.col-company li a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}
+
+.copyright a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a strong {
+    letter-spacing: .2px;
+}
+
+/* Button Scroll */
+.btn-scroll {
+    background-color: #4E73DF;
+    border: none;
+    padding: 15px 20px;
+    width: 65px;
+    height: 60px;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    transition: 0.5s ease all;
+    z-index: 2;
+}
+
+.btn-scroll:focus {
+    outline: none !important;
+    border: 1px solid #80BDFF;
+    box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 3.2px;
+}
+
+.btn-scroll i {
+    color: white;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.btn-scroll a {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .content {
+        margin-top: 140px;
+        padding: 0 10px !important;
+    }
+
+    .content h1 {
+        font-size: 2.3rem;
+    }
+
+    .btn-scroll {
+        width: 55px;
+        height: 50px;
+    }
+
+    .btn-scroll i {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    /* Section Pertama */
+    .sec-1 {
+        min-height: 100vh;
+    }
+
+    .row0 {
+        display: block !important;
+        margin-right: -25px;
+        margin-left: -20px;
+    }
+
+    .image {
+        width: 100%;
+        padding: 0;
+        margin: -20px 0 1rem 0;
+    }
+
+    .image img {
+        margin: 0;
+        max-width: 75%;
+    }
+
+    .col-satu {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .col-satu h1 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .col-satu span {
+        font-size: 15px;
+    }
+
+    /* Section Kedua */
+    .sec-2 {
+        margin: 50px 0 58px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .chef-info {
+        text-align: center;
+        width: 70%;
+        margin: 0 auto !important;
+    }
+
+    .image-2 {
+        max-width: 100%;
+    }
+
+    .col-dua h3 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .col-dua small {
+        display: block;
+    }
+
+    .col-dua span {
+        font-size: 15px;
+    }
+
+    .col-dua hr {
+        margin: 10px 10px;
+    }
+
+    .chef-food {
+        width: 100%;
+        margin: 15px auto 0 auto;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    .image-3 img {
+        text-align: center;
+    }
+
+    .fleximage-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col-tiga {
+        margin-right: 0;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .col-tiga h3 {
+        font-size: 1.5rem;
+    }
+
+    .col-tiga span {
+        font-size: 15px;
+    }
+
+    /* Section 3 */
+    .row {
+        display: block;
+    }
+
+    /* Content */
+    .content-2 {
+        margin: 0;
+        text-align: center;
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    .content-2 h3 {
+        font-size: 1.5rem;
+    }
+
+    .content-2 span {
+        font-size: 15px;
+    }
+
+    /* Form */
+    .form {
+        margin-top: 15px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .form input {
+        height: 40px;
+    }
+
+    .form textarea {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .form button {
+        float: none;
+        padding: 10px 13px;
+        margin-bottom: 1.1rem;
+    }
+
+
+    /* Footer */
+footer {
+    min-height: 95vh;
+}
+
+.container-2 {
+    width: 100%;
+    margin: 20px auto 0 auto;
+    padding: 0 15px 0 30px;
+}
+
+.row-2 {
+    display: block;
+    margin: 0 0 48px 0;
+}
+
+.row-2 h3 {
+    font-size: 1.5em;
+}
+
+.col-restaurant,
+.col-services,
+.col-company {
+    padding: 0 5px 0 0;
+    margin-bottom: 35px;
+}
+
+.col-restaurant {
+    width: 100%;
+}
+
+.col-services {
+    width: 100%;
+    text-align: left;
+}
+
+.col-company {
+    width: 100%;
+    text-align: left;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}
+
+.copyright a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.copyright a strong {
+    letter-spacing: .2px;
+}
+}
+
+@media (max-width: 768px) {
+    nav>strong {
+        margin-left: 10px;
+    }
+
+    nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    nav>.nav-btn>label {
+        display: inline-block;
+        width: 53px;
+        height: 39px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    nav>.nav-btn>label>span {
+        display: block;
+        width: 27px;
+        height: 9px;
+        border-top: 2px solid gray;
+    }
+
+    nav>.navsatu {
+        position: relative;
+        display: block;
+        width: 100%;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 7px;
+        left: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    nav>.navsatu>a {
+        display: block;
+        width: 100%;
+        padding: 3px 0 17px 27px !important;
+    }
+
+    nav>#nav-check:not(:checked)~.navsatu {
+        height: 0;
+    }
+
+    nav>#nav-check:checked~.navsatu {
+        height: calc(60vh - 110px);
+        overflow-y: auto;
+    }
+
+    /* Content */
+    .content {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        padding: 0 40px;
+        text-align: center;
+        z-index: 1;
+        margin-top: 200px;
+    }
+
+    /* Section Pertama */
+    .sec-1 {
+        min-height: 90vh;
+    }
+
+    .row0 {
+        display: flex;
+        margin-right: -25px;
+        margin-left: -20px;
+    }
+
+    .col-satu {
+        padding-right: 0;
+    }
+
+    .col-satu h1 {
+        font-size: 1.5rem;
+    }
+
+    .chef-info {
+        margin-left: 10px;
+    }
+
+    .chef-food {
+        padding-left: 40px;
+    }
+
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width:1200px) {}
+
+@media (max-width: 1400px) {}
