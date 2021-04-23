@@ -848,10 +848,10 @@ footer {
         top: 15px;
         background-color: white;
         border-radius: 4px;
-        -webkit-border-radius:;
-        -moz-border-radius:;
-        -ms-border-radius:;
-        -o-border-radius:;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
 }
 
     nav>.nav-btn>label {
