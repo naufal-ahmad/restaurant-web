@@ -848,7 +848,11 @@ footer {
         top: 15px;
         background-color: white;
         border-radius: 4px;
-    }
+        -webkit-border-radius:;
+        -moz-border-radius:;
+        -ms-border-radius:;
+        -o-border-radius:;
+}
 
     nav>.nav-btn>label {
         display: inline-block;
