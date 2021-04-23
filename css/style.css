@@ -615,15 +615,6 @@ footer {
         padding: 0 10px !important;
     }
 
-    .content h1 {
-        font-size: 2.3rem;
-    }
-
-    .btn-scroll {
-        width: 55px;
-        height: 50px;
-    }
-
     .btn-scroll i {
         font-size: 1.6em;
         text-align: center;
@@ -889,7 +880,11 @@ footer {
         right: 0;
         margin-top: 10px;
         margin-right: 0;
-    }
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+}
 
     nav>.navsatu>a {
         display: block;
